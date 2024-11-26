@@ -1,0 +1,1 @@
+python main.py --seed 42 --accelerator gpu --strategy ddp --precision 32 --devices 2 --max_epochs 20 --checkpoint_save_path ./experiments/train/wn18rr/ --data_path ./data/wn18rr --batch_size 32 --test_batch_size 32 --num_workers 8 --num_layer 3 --num_qk_layer 2 --num_v_layer 3 --hidden_dim 32 --num_heads 4 --loss_fn ce --learning_rate 5e-3 --optimizer Adam --weight_decay 1e-4
